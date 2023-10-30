@@ -22,8 +22,8 @@ public class Main {
         String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 
         UsuariosDTO usuario= new UsuariosDTO();
-        usuario.setUsuario("jorge");
-        usuario.setNombre("Jorge Hernandez");
+        usuario.setUsuario("admin");
+        usuario.setNombre("Administrador");
         usuario.setPassword(hashedPassword);
 
         UsuariosDAO DBUsuario= new UsuariosDAO();
