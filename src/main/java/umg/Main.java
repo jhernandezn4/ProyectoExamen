@@ -18,20 +18,5 @@ public class Main {
         login.setVisible(true);
 
     }
-    public static void crearUsuarioInicial(){
-        //SE ENCRIPTA LA CONTRASEÑA
-        String password = "1234";
-        String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
 
-        UsuariosDTO usuario= new UsuariosDTO();
-        usuario.setUsuario("admin");
-        usuario.setNombre("Administrador");
-        usuario.setPassword(hashedPassword);
-
-        UsuariosDAO DBUsuario= new UsuariosDAO();
-        DBUsuario.crear(usuario);
-        System.out.println("usuario creado");
-
-
-    }
 }

@@ -34,7 +34,7 @@ public class Inicio extends JFrame {
     private JButton bCursosActualizar;
 
     public Inicio() {
-        setSize(400, 300);
+        setSize(400, 500);
         setLocationRelativeTo(null);
         setContentPane(contentPane);
         setTitle("Examen Programacion Anthony Hernandez");
